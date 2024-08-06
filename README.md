@@ -53,4 +53,5 @@ Tue  6 Aug 13:05:05 BST 2024
 ```
 36 Seconds
 
-As expected gnu coreutils cp is faster, but other times pmcp holds up. A smarter algorithm for block size picking could do well.
+As expected gnu coreutils cp is faster, but other times pmcp holds up. 
+A smarter algorithm for block size picking could probably improve performance.
