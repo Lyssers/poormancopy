@@ -72,8 +72,10 @@ void usage(){
 }       
 
 void block_size(unsigned long long * size, unsigned long * blocksize){
-
-	if (*size > 131072) *blocksize = 131072;
+	
+	if (*size > 524288) *blocksize = 524288;
+	else if (*size > 262144) *blocksize = 262144;
+	else if (*size > 131072) *blocksize = 131072;
 	else if (*size > 65536) *blocksize = 65536;
 	else if (*size > 32768) *blocksize = 32768;
 	else if (*size > 16384) *blocksize = 16384;
